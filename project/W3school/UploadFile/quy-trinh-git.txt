@@ -1,0 +1,21 @@
+I. Lần đầu
+- clone source trên git về
+	git clone https://gitlab.vnext.vn/...............
+- checkout sang branch develop
+	git checkout develop
+- tạo branch của mình
+	vd: git checkout -b vuhx
+- push branch của mình lên git
+	vd: git push origin vuhx
+- check trên git xem đã thành công chưa
+
+II. Lần thứ hai trở đi
+- chỉ làm việc trên nhánh của mình, không làm việc trên nhánh khác
+- trước khi code một tính năng mới phải pull code mới nhất từ develop về
+	git pull origin develop
+- coding công việc
+- sau khi làm xong phải commit lên nhánh của mình
+- pull code mới nhất từ develop về
+- xử lý conflig nếu có
+- nếu có thay đổi thì commit một lần nữa
+- lên github tạo pull request từ nhánh của mình vào develop (assign cho vuhx)

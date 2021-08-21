@@ -1,0 +1,23 @@
+<%- include('includes/header.ejs') %>
+</head>
+<body>
+    <%- include('includes/navbar.ejs') %>
+    <div class="container" style="margin-top:50px">
+        <div class="row">
+            <% data.forEach(course => { %>
+                <div class="col-4" style="margin-bottom: 30px">
+                    <div class="card" style="width: 18rem">
+                        <a href = "<%= "course/" + course.slug%>">
+                            <img src="<%=course.image%>" height="200px" style="object-fit: cover" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                          <h5 class="card-title"><%=course.name%></h5>
+                          <p class="card-text"><%=course.description%></p>
+                          <a href= "<%= "course/" + course.slug%>" class="btn btn-primary">Buy course</a>
+                        </div>
+                      </div>
+                </div> 
+            <%});  %>
+        </div>
+    </div>
+<%- include('includes/footer.ejs') %>
